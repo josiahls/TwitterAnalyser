@@ -3,10 +3,10 @@ from py._builtin import execfile
 
 import analyser
 
-ACCESS_TOKEN = '964996958283816960-BSFfv4POCwkjBZFM3nODVMsGm6afjVP'
-ACCESS_SECRET = 'ZVg2i4QoJprEQvik4f1n9TLEPf4yezM8hMNz8DY2157ZR'
-CONSUMER_KEY = 'HaIZ2Gev3AoZSud3sMVYoncqk'
-CONSUMER_SECRET = 'D5HRf1Sm0KOTBvMDT9jnm1ZYZnNri3cBu39hLP7wkFZ3VZxbtr'
+ACCESS_TOKEN = ''
+ACCESS_SECRET = ''
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
 SEARCH = input("Enter the search string ")  # 'trump'
 FROM = input("Enter the from date (YYYY-MM-DD format) ")  # '2018-01-01'
 TO = input("Enter the to data (YYYY-MM-DD format) ")  # '2018-02-17'
