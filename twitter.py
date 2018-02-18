@@ -10,7 +10,7 @@ CONSUMER_SECRET = ''
 SEARCH = input("Enter the search string ")  # 'trump'
 FROM = input("Enter the from date (YYYY-MM-DD format) ")  # '2018-01-01'
 TO = input("Enter the to data (YYYY-MM-DD format) ")  # '2018-02-17'
-INPUT_FILE_PATH = './' + 'output.txt'  # SEARCH + '.txt' # does somthing
+INPUT_FILE_PATH = './' + 'output.txt'  # SEARCH + '.txt'
 
 num = int(input("Enter the number of tweets you want to retrieve for the search string "))  # 2000
 auth = tweepy.auth.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -38,7 +38,7 @@ for res in tweepy.Cursor(api.search, q=SEARCH, rpp=100, count=20, result_type="r
     f.write(str(res.retweet_count))
     f.write('\n')
     if i % 50 == 0:
-        print("Tweets retrieved %", (i / num))
+        print("Tweets retrieved %", ((i / num) * 100))
 f.close()
 print("Tweets retrieved ", i)
 
