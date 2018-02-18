@@ -10,7 +10,7 @@ CONSUMER_SECRET = ''
 SEARCH = input("Enter the search string ")  # 'trump'
 FROM = input("Enter the from date (YYYY-MM-DD format) ")  # '2018-01-01'
 TO = input("Enter the to data (YYYY-MM-DD format) ")  # '2018-02-17'
-INPUT_FILE_PATH = './' + 'output.txt'  # SEARCH + '.txt'
+INPUT_FILE_PATH = './' + 'output.txt'  # SEARCH + '.txt' # does somthing
 
 num = int(input("Enter the number of tweets you want to retrieve for the search string "))  # 2000
 auth = tweepy.auth.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
