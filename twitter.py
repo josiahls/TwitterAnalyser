@@ -1,16 +1,16 @@
 import tweepy
 import time
 
-ACCESS_TOKEN = ''
-ACCESS_SECRET = ''
-CONSUMER_KEY = ''
-CONSUMER_SECRET = ''
-SEARCH = input("Enter the search string ")
-FROM = input("Enter the from date (YYYY-MM-DD format) ")
-TO = input("Enter the to data (YYYY-MM-DD format) ")
-INPUT_FILE_PATH = './' + SEARCH + '.txt'
+ACCESS_TOKEN = '964996958283816960-BSFfv4POCwkjBZFM3nODVMsGm6afjVP'
+ACCESS_SECRET = 'ZVg2i4QoJprEQvik4f1n9TLEPf4yezM8hMNz8DY2157ZR'
+CONSUMER_KEY = 'HaIZ2Gev3AoZSud3sMVYoncqk'
+CONSUMER_SECRET = 'D5HRf1Sm0KOTBvMDT9jnm1ZYZnNri3cBu39hLP7wkFZ3VZxbtr'
+SEARCH = 'trump'  # input("Enter the search string ")
+FROM = '2018-01-01'  # input("Enter the from date (YYYY-MM-DD format) ")
+TO = '2018-02-17'  # input("Enter the to data (YYYY-MM-DD format) ")
+INPUT_FILE_PATH = './' + 'output.txt'  # SEARCH + '.txt'
 
-num = int(input("Enter the number of tweets you want to retrieve for the search string "))
+num = 500  # int(input("Enter the number of tweets you want to retrieve for the search string "))
 auth = tweepy.auth.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 api = tweepy.API(auth)
